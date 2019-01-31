@@ -1,0 +1,1 @@
+# go-manual-test-vs-testify
