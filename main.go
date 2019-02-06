@@ -24,6 +24,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("error is %v", err)
 	}
-	fmt.Printf("Q: user '%v' still used name '%v' ??\n", username, name)
-	fmt.Printf("A: anwser is %v\n", resp)
+	if resp {
+		fmt.Printf("login '%v' name is '%v' ??\n", username, name)
+	}
 }

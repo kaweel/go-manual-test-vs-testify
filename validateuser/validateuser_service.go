@@ -18,7 +18,7 @@ func (s *service) ValidateUser(user string, name string) (bool, error) {
 		return false, err
 	}
 	if res.Name != name {
-		return false, err
+		return false, nil
 	}
 	return true, nil
 }
