@@ -24,7 +24,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("error is %v", err)
 	}
-	if resp {
-		fmt.Printf("login '%v' name is '%v' ??\n", username, name)
-	}
+
+	fmt.Printf("login '%v' using name '%v' ?? : %v\n", username, name, resp)
+
 }
